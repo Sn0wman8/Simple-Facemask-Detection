@@ -57,6 +57,16 @@ First, clone this repository to your local machine:
 
     `npm run start`
 
+## Screenshots
+- ### User Interface
+![image](https://github.com/user-attachments/assets/220a3846-a3ff-4490-9100-6eefcc75c269)
+- ### Facemask Detected
+![image](https://github.com/user-attachments/assets/a0bfbec7-1ee7-48f9-815a-63e2f1646110)
+- ### No Facemask Detected
+![image](https://github.com/user-attachments/assets/72234c68-3ba3-48d7-90a4-0cbef3be5f1d)
+
+
+
 ## Project Structure
 ```
 facemask/
