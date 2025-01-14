@@ -88,6 +88,10 @@ facemask/
 
 ```
 
+## Contributions
+- [Chau Hong Feng](https://github.com/hfchau1126)
+- [Koay Jing Yuan](https://github.com/KJingY)
+- [Marcus Tan Tung Chean](https://github.com/Sn0wman8)
 
 ## Acknowledgments
 - [React](https://reactjs.org/) for the frontend framework.
