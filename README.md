@@ -58,6 +58,7 @@ First, clone this repository to your local machine:
 `npm run start`
 
 ## Project Structure
+```
 Simple-Facemask-Detection/
 ├── facemask/            # Frontend code
 │   ├── public/          # Static assets
@@ -69,6 +70,7 @@ Simple-Facemask-Detection/
 │   ├── requirements.txt # Python dependencies
 │   └── ...
 └── README.md            # Project documentation
+```
 
 
 ## Acknowledgments
