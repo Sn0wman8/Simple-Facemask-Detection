@@ -21,41 +21,41 @@ Before you begin, ensure you have the following installed:
 
 First, clone this repository to your local machine:
 
-`git clone https://github.com/Sn0wman8/Simple-Facemask-Detection.git`
+    `git clone https://github.com/Sn0wman8/Simple-Facemask-Detection.git`
 
 ### 2. Set Up the Frontend
 
 1. Navigate to the facemask folder:
 
-`cd facemask`
+    `cd facemask`
 
 2. Install the required npm packages:
 
-`npm install`
+    `npm install`
 
 ### 3. Set Up the Backend
 
 1. Open a new terminal window and navigate to the `backend` folder:
 
-`cd backend`
+    `cd backend`
 
 2. Install the required Python packages
 
-`pip install -r requirements.txt`
+    `pip install -r requirements.txt`
 
 3. Run the backend server:
 
-`python app.py`
+    `python app.py`
 
 ### 4. Launch the Frontend
 
 1. In the original terminal window (where you installed the frontend dependencies), navigate back to the `facemask` folder if you're not already there:
 
-`cd ../facemask`
+    `cd ../facemask`
 
 2. Start the frontend development server:
 
-`npm run start`
+    `npm run start`
 
 ## Project Structure
 ```
