@@ -17,7 +17,7 @@ code {
 }
 
 .background-container {
-  background-image: url('C:/Users/USER-PC/Documents/Old HW/Y3S1/CPT316/Assignment_2/facemask/src/assets/bg1.jpg'); 
+  background-image: url('./assets/bg1.jpg'); 
   background-size: cover; 
   background-position: center; 
   height: 100vh; 
