@@ -25,11 +25,7 @@ First, clone this repository to your local machine:
 
 ### 2. Set Up the Frontend
 
-1. Navigate to the facemask folder:
-
-    `cd facemask`
-
-2. Install the required npm packages:
+1. Install the required npm packages:
 
     `npm install`
 
