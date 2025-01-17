@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# Simple Facemask Detection Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a facemask detection system that consists of a frontend built with React (or another framework) and a backend built with Python. The frontend allows users to interact with the system, while the backend handles the detection logic.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Prerequisites
 
-### `npm start`
+Before you begin, ensure you have the following installed:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Node.js](https://nodejs.org/) (for running the frontend)
+- [Python](https://www.python.org/) (for running the backend)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js)
+- [pip](https://pip.pypa.io/en/stable/) (Python package installer)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Installation and Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Clone the Repository
 
-### `npm run build`
+First, clone this repository to your local machine:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    `git clone https://github.com/Sn0wman8/Simple-Facemask-Detection.git`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Set Up the Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Install the required npm packages:
 
-### `npm run eject`
+    `npm install`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Set Up the Backend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Open a new terminal window and navigate to the `backend` folder:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    `cd backend`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install the required Python packages
 
-## Learn More
+    `pip install -r requirements.txt`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Run the backend server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    `python app.py`
 
-### Code Splitting
+### 4. Launch the Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. In the original terminal window (where you installed the frontend dependencies), navigate back to the root folder if you're not already there:
 
-### Analyzing the Bundle Size
+    `cd..`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Start the frontend development server:
 
-### Making a Progressive Web App
+    `npm run start`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Screenshots
+- ### User Interface
+![image](https://github.com/user-attachments/assets/220a3846-a3ff-4490-9100-6eefcc75c269)
+- ### Facemask Detected
+![image](https://github.com/user-attachments/assets/a0bfbec7-1ee7-48f9-815a-63e2f1646110)
+- ### No Facemask Detected
+![image](https://github.com/user-attachments/assets/72234c68-3ba3-48d7-90a4-0cbef3be5f1d)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Project Structure
+```
+facemask/
+├── backend/                          # Backend files
+│   ├── app.py                        # Backend server script
+│   ├── facemask_detection_model.h5   # Pre-trained model for facemask detection
+|   ├── uploads                       # Temporarily store image 
+│   └── requirements.txt              # Python dependencies for the backend
+│
+├── build/                            # Production build files (generated by `npm run build`)
+├── node_modules/                     # Node.js dependencies (generated by `npm install`)
+├── src/                              # Source code for the frontend
+│   ├── assets/                       # Additional static assets
+│       └── bg1.jpg                   # Background image
+├── components/                       # React components
+│   └── ImageClassifier.jsx           # Component for image classification
+├── App.css                           # Styles for the App component
+├── App.js                            # Main React application logic
+├── App.test.js                       # Tests for the App component
+├── index.css                         # Global styles
+├── index.js                          # Entry point for the React app
+├── setupTests.js                     # Configuration for testing
+├── .gitignore                        # Specifies files to ignore in Git
+├── package-lock.json                 # Auto-generated file for npm dependencies
+├── package.json                      # Frontend dependencies and scripts
+├── postcss.config.js                 # Configuration for PostCSS
+├── README.md                         # Project documentation
+└── tailwind.config.js                # Configuration for Tailwind CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
 
-### `npm run build` fails to minify
+## Credits
+- [Chau Hong Feng](https://github.com/hfchau1126)
+- [Koay Jing Yuan](https://github.com/KJingY)
+- [Marcus Tan Tung Chean](https://github.com/Sn0wman8)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgments
+- [React](https://reactjs.org/) for the frontend framework.
+
+- [Python](https://www.python.org/) for the backend logic.
+
+- [npm](https://www.npmjs.com/) for managing frontend dependencies.
