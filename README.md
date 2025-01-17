@@ -45,9 +45,9 @@ First, clone this repository to your local machine:
 
 ### 4. Launch the Frontend
 
-1. In the original terminal window (where you installed the frontend dependencies), navigate back to the `facemask` folder if you're not already there:
+1. In the original terminal window (where you installed the frontend dependencies), navigate back to the root folder if you're not already there:
 
-    `cd ../facemask`
+    `cd..`
 
 2. Start the frontend development server:
 
