@@ -4,7 +4,7 @@ import os
 from werkzeug.utils import secure_filename
 import numpy as np
 import cv2
-from tensorflow.keras.models import load_model  # Add this import for your model
+from tensorflow.keras.models import load_model  
 
 app = Flask(__name__)
 CORS(app)
@@ -18,8 +18,8 @@ if not os.path.exists(UPLOAD_FOLDER):
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-# Load your model globally
-MODEL_PATH = 'facemask_detection_model.h5'  # Update this with your model path
+# Load model
+MODEL_PATH = 'facemask_detection_model.h5'  
 model = load_model(MODEL_PATH)
 
 def allowed_file(filename):
